@@ -31,17 +31,19 @@ h6 {
 button {
   text-decoration: none;
   border: none;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.8;
 }
 
 button:focus {
   outline: none;
-  opacity: 0.8;
+  color: #000;
+  background-color: #b9c400;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #b9c400;
 }
 
 .container {
