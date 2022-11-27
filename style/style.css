@@ -28,14 +28,14 @@ h6 {
   margin: 0;
 }
 
-button {
+.btn {
   text-decoration: none;
   border: none;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-button:focus {
+.btn:focus {
   outline: none;
   color: #000;
   background-color: #b9c400;
@@ -44,6 +44,7 @@ button:focus {
 .btn:hover {
   color: #000;
   background-color: #b9c400;
+  border-color: transparent;
 }
 
 .play-btn {
@@ -259,4 +260,78 @@ button:focus {
   display: inline-block;
   width: 220px;
   padding-right: 10px;
+}
+
+/* PRODUCT */
+
+.product {
+  padding-top: 150px;
+}
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.product__title {
+  margin-bottom: 50px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 67px;
+  color: #0093a1;
+}
+.product__info {
+  position: relative;
+  max-width: 505px;
+}
+.item-product {
+  max-width: 292px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.item-product:hover .item-product__title {
+  color: #0093a1;
+}
+.item-product__title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #262c27;
+}
+.item-product__btn {
+  width: 100%;
+  padding: 18px 15px;
+  text-align: center;
+  margin-top: 25px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #0093a1;
+  border: 1px solid #0093a1;
+}
+.star {
+  position: absolute;
+  right: 0;
+  bottom: 130px;
+}
+.star svg {
+  transition: all 0.3s ease;
+}
+.star:hover svg {
+  width: 250px;
+  height: 248px;
+}
+.star__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.star:hover .star__text {
+  font-size: 40px;
+  line-height: 48px;
 }
