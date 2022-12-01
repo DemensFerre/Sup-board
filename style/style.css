@@ -75,7 +75,7 @@ h6 {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -359,7 +359,7 @@ h6 {
   right: 356px;
 }
 .technology__inner {
-  transform: translateY(485px);
+  transform: translateY(575px);
 }
 .technology__top {
   margin-bottom: 200px;
@@ -393,13 +393,20 @@ h6 {
   line-height: 120%;
 }
 .technology__gallery {
+  position: relative;
   display: grid;
   grid-template-columns: 481px 208px;
   grid-template-rows: 432px 300px;
   gap: 24px 30px;
+  padding: 72px 31px 52px;
   margin-top: -375px;
 }
-.technology__img {
+.technology__gallery::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid #262c27;
+  border-radius: 200px 0px 300px;
 }
 .technology__img_big {
   grid-column: 1 / 3;
